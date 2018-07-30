@@ -3,10 +3,10 @@
     <head>
         <title>An interactive web page</title>
         <style>
-            #color_box {width: 200px; height: 200px;}
-            .gray {background: gray;}
-            .blue {background: rgb(67, 111, 255);}
-            .pink {background: pink;}
+            #color_box { width: 200px; height: 200px; }
+            .gray { background: gray; }
+            .blue { background: rgb(67, 111, 255); }
+            .pink { background: pink; }
         </style>
     </head>
     <body>
@@ -22,9 +22,11 @@
             const blue_button = document.getElementById("blue_button");
             const pink_button = document.getElementById("pink_button");
             const color_box = document.getElementById("color_box");
+            
             gray_button.onclick = function() {
                 color_box.className = "gray";
             };
+            
             blue_button.onclick = function () {
                 color_box.className = "blue";
             }
@@ -44,7 +46,7 @@
         <button id="counter_button">This fabulous button</button>
         has been clicked <span id="countspan">0</span> times.
         <script>
-            var count=0;
+            let count = 0;
             const counter_button = document.getElementById("counter_button");
             let countspan = document.getElementById("countspan");
             counter_button.onclick = function() {
